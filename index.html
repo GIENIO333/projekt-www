@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jagiellonia Fan Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  </div>
+    <header>
+      
+        <h1>Jagiellonia Białystok</h1>
+        <nav>
+          <a href="index.html">Podstawowe informacje</a>
+          <a href="legendy.html">Legendy klubu</a>
+          <a href="historia.html">Historia</a>
+          <a href="stadion.html">Stadion</a>
+        </nav>
+      </header>
+
+  <div class="logo">
+    <img src="https://tmssl.akamaized.net//images/wappen/head/2300.png?lm=1723051894" alt="Herb Jagiellonii">
+  </div>
+  <button id="theme-toggle" aria-label="Przełącz tryb ciemny/jasny">
+    <span id="theme-icon">🌙</span>
+  </button>
+  
+  <main>
+    <div class="filter">
+      <label for="search">Szukaj piłkarza: </label>
+      <input type="text" id="search" placeholder="Wpisz imię lub nazwisko">
+      
+      <div class="sort-options">
+        <span>Sortuj według:</span>
+        <select id="sort-by">
+          <option value="name-asc">Nazwisko A-Z</option>
+          <option value="name-desc">Nazwisko Z-A</option>
+          <option value="position">Pozycja</option>
+          <option value="age-asc">Wiek (rosnąco)</option>
+          <option value="age-desc">Wiek (malejąco)</option>
+          <option value="value-desc">Wartość (malejąco)</option>
+          <option value="value-asc">Wartość (rosnąco)</option>
+        </select>
+      </div>
+    </div>
+   
+    <div class="players" id="playerList">
+      <!-- Karty piłkarzy generowane przez JS -->
+    </div>
+    
+    <section class="achievements">
+      <h2>🏆 Największe Osiągnięcia Jagiellonii</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <img src="https://foto.cloudgdansk.pl/foto/Ekstraklasa_Trophy_Tour_w_Gdansku_88025_1280px.JPG" alt="Mistrzostwo Polski 2024">
+          <h3>Mistrzostwo Polski 2024</h3>
+          <p>Historyczny triumf i pierwsze mistrzostwo w historii klubu!</p>
+        </div>
+    
+        <div class="achievement-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5dPcmBaRKLc77nSysHpYu21qPXbxpqKjymevxC_MfN6J_chL4zwL4UjYAW5e1EbmMhbc&usqp=CAU" alt="Wicemistrzostwo 2017 i 2018">
+          <h3>Wicemistrzostwo 2017 i 2018</h3>
+          <p>Sezony pełne emocji, zacięta walka o tytuł do ostatnich kolejek.</p>
+        </div>
+    
+        <div class="achievement-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Fina%C5%82_Pucharu_Polski_%2814095359341%29.jpg/330px-Fina%C5%82_Pucharu_Polski_%2814095359341%29.jpg" alt="Puchar Polski 2010">
+          <h3>Puchar Polski 2010</h3>
+          <p>Jagiellonia po raz pierwszy zdobywa krajowy puchar.</p>
+        </div>
+    
+        <div class="achievement-card">
+          <img src="https://pzpn.pl/public/system/images/articles/12601/17267-zoom.jpg?ts=cf22ccb857f39bd0db4b63e9f5f28bca" alt="Superpuchar 2010">
+          <h3>Superpuchar Polski 2010 & 2025</h3>
+          <p>Po wygraniu Pucharu Polski – kolejny sukces w meczu o Superpuchar.</p>
+        </div>
+        
+        <div class="achievement-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/UEFA_Conference_League_full_logo_%282024_version%29.svg/360px-UEFA_Conference_League_full_logo_%282024_version%29.svg.png" alt="Liga Konferencji">
+          <h3>Ćwierćfinał Ligi Konferencji</h3>
+          <p>Sukcesy na arenie międzynarodowej</p>
+        </div>
+      </div>
+    </section>
+      
+    <div class="info-box">
+      🏆 <strong>MISTRZ!</strong> Kulisy świętowania mistrzostwa Polski w Białymstoku (2024):
+      <div class="video-container">
+        <iframe width="100%" height="315" 
+        src="https://www.youtube.com/embed/6ZaIox8nHPw" 
+        title="MISTRZ! Kulisy świętowania mistrzostwa Polski w Białymstoku" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <section class="favorite-player-form">
+      <h2>Kto jest Twoim ulubionym piłkarzem Jagiellonii?</h2>
+      <form id="playerForm" novalidate>
+        <div class="form-group">
+          <label for="playerName">Imię i nazwisko piłkarza:*</label>
+          <input type="text" id="playerName" name="playerName" required 
+                 placeholder="np. Taras Romanczuk" minlength="3">
+          <div class="error-message" id="nameError"></div>
+        </div>
+    
+
+    
+        <div class="form-group">
+          <label for="reason">Dlaczego to Twój ulubiony piłkarz?*</label>
+          <textarea id="reason" name="reason" required 
+                    placeholder="Opisz co Cię zachwyca w jego grze..." minlength="10"></textarea>
+          <div class="error-message" id="reasonError"></div>
+        </div>
+    
+        <div class="form-group">
+          <label for="favoriteMoment">Ulubiony moment z udziałem tego piłkarza:</label>
+          <input type="text" id="favoriteMoment" name="favoriteMoment" 
+                 placeholder="np. gol w derbach z Legią w 2023">
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Twój email (jeśli chcesz otrzymać potwierdzenie):</label>
+          <input type="email" id="email" name="email" 
+                 placeholder="twoj@email.com">
+          <div class="error-message" id="emailError"></div>
+        </div>
+    
+        <div class="form-actions">
+          <button type="submit" class="btn-submit">Wyślij odpowiedź</button>
+          <button type="reset" class="btn-reset">Wyczyść formularz</button>
+        </div>
+      </form>
+    
+      <div id="successMessage" class="success-message" style="display:none;">
+        <h3>Dziękujemy za udział w ankiecie!</h3>
+        <p>Twój ulubiony piłkarz został zapisany.</p>
+        <div id="responseDetails"></div>
+      </div>
+    </section>
+    <div class="info-box">
+      📜 Przeczytaj o <a href="historia.html">historii Jagiellonii Białystok</a> – od powstania klubu aż po sukcesy w Ekstraklasie.
+    </div>
+
+    <div class="info-box">
+      🏟️ Poznaj nasz stadion – <strong>Stadion Miejski w Białymstoku</strong> mieści ponad 22 000 widzów. Szczegóły w <a href="stadion.html">sekcji stadion</a>.
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Jagiellonia Fan Page
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
