@@ -10,7 +10,7 @@ const StateManager = {
       return false;
     }
   },
-//test 
+
   get: (key, persistent = true) => {
     try {
       const storage = persistent ? localStorage : sessionStorage;
