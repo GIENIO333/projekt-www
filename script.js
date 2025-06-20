@@ -302,17 +302,7 @@ const players = [
       narodowosc: "Angola, Francja",
       wartosc: 5,
     },
-    {
-        name: "Lamine Diaby-Fadiga",
-        position: "Napastnik",
-        number: 9,
-        wiek:24,
-        photo: "https://img.a.transfermarkt.technology/portrait/medium/495669-1724099356.jpg?lm=1",
-        wzrost: "1,88 m",
-        kluby: "Paris fc",
-        narodowosc: "Francja, Gwinea",
-        wartosc: 0.5,
-      },  
+
   ];
   // Inicjalizacja po załadowaniu DOM
 document.addEventListener('DOMContentLoaded', function() {
