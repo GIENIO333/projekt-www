@@ -237,6 +237,17 @@ const players = [
         wartosc: 0.7,
       },
       {
+        name: "Dawid Drachal",
+        position: "Ofensywny Pomocnik",
+        number: 8,
+        wiek:20,
+        photo: "https://img.a.transfermarkt.technology/portrait/big/895298-1737298279.jpg?lm=1",
+        wzrost: "1,82 m",
+        kluby: "Raków Częstochowa",
+        narodowosc: "Polska",
+        wartosc: 0.8,
+      },  
+      {
         name: "Oskar Pietuszewski",
         position: "Skrzydłowy, Ofensywny pomocnik",
         number: 80,
